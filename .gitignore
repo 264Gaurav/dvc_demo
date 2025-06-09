@@ -1,11 +1,4 @@
 #ignore data files that should be tracked by dvc
-/data
-data/
-
-/dataset/sample1.csv
-/dataset/sample2.csv
-
-
 
 
 # Byte-compiled / optimized / DLL files
@@ -202,4 +195,5 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
 /data
