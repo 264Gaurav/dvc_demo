@@ -14,11 +14,11 @@ stages:
     params:
       params.yaml:
         prepare.seed: 20170428
-        prepare.split: 0.2
+        prepare.split: 0.25
     outs:
     - path: data/prepared
       hash: md5
-      md5: 153aad06d376b6595932470e459ef42a.dir
+      md5: c08931d1c7459f43950b7aac03aa0ec5.dir
       size: 8437363
       nfiles: 2
   featurize:
@@ -26,7 +26,7 @@ stages:
     deps:
     - path: data/prepared
       hash: md5
-      md5: 153aad06d376b6595932470e459ef42a.dir
+      md5: c08931d1c7459f43950b7aac03aa0ec5.dir
       size: 8437363
       nfiles: 2
     - path: src/featurization.py
@@ -40,16 +40,16 @@ stages:
     outs:
     - path: data/features
       hash: md5
-      md5: 25a8447bce19762a2c8aa30236bd3fb6.dir
-      size: 1556290
+      md5: 48867b9f426315e0a57ce064c3e1adb8.dir
+      size: 1561118
       nfiles: 2
   train:
     cmd: python src/train.py data/features model.pkl
     deps:
     - path: data/features
       hash: md5
-      md5: 25a8447bce19762a2c8aa30236bd3fb6.dir
-      size: 1556290
+      md5: 48867b9f426315e0a57ce064c3e1adb8.dir
+      size: 1561118
       nfiles: 2
     - path: src/train.py
       hash: md5
@@ -58,10 +58,10 @@ stages:
     params:
       params.yaml:
         train.min_split: 0.01
-        train.n_est: 50
+        train.n_est: 60
         train.seed: 20170428
     outs:
     - path: model.pkl
       hash: md5
-      md5: f49ceede60817fef6d1c2beb058f0345
-      size: 1855075
+      md5: 4ffe141d2f16531a69916b6ca2062126
+      size: 2174100
