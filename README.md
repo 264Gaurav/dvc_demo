@@ -33,7 +33,7 @@ The data pipeline is defined in the `dvc.yaml` file, which specifies the stages 
 ### Installation / Project setup
 
 1- Clone the repository:
-git clone repo-url
+git clone repo-url ,
 cd dvc_demo
 
 2- Install dependencies:
@@ -48,11 +48,11 @@ dvc init
 dvc add <data-file>
 
 3- Commit changes to Git:
-git add <data-file>.dvc .gitignore
+git add data-file .dvc .gitignore ,
 git commit -m "Track data file with DVC"
 
 4- Push data to remote storage:
-dvc remote add -d <remote-name> <remote-url>
+dvc remote add -d remote-name remote-url ,
 dvc push
 
 ## Commands to Work with the Pipeline
