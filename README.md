@@ -1,4 +1,4 @@
-# dvc_demo
+# dvc tool - data versioning and data pipeline
 
 Data Versioning Control - Demonstrating the use of DVC tool with Git for efficient data and model management.
 
