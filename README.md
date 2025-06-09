@@ -4,8 +4,8 @@ Data Versioning Control - Demonstrating the use of DVC tool with Git for efficie
 
 ### Prerequisites
 
-Python
-Git installed
+Python,
+Git installed,
 DVC installed (pip install dvc)
 
 ## Overview
@@ -32,26 +32,26 @@ The data pipeline is defined in the `dvc.yaml` file, which specifies the stages 
 
 ### Installation / Project setup
 
-1- Clone the repository
-git clone <repository-url>
+1- Clone the repository:
+git clone repo-url
 cd dvc_demo
 
-2- Install dependencies
+2- Install dependencies:
 pip install -r src/requirements.txt
 
 ## Usage
 
-1- Intiatlize DVC
+1- Intiatlize DVC:
 dvc init
 
-2- Add data files for versioning
+2- Add data files for versioning:
 dvc add <data-file>
 
-3- Commit changes to Git
+3- Commit changes to Git:
 git add <data-file>.dvc .gitignore
 git commit -m "Track data file with DVC"
 
-4- Push data to remote storage
+4- Push data to remote storage:
 dvc remote add -d <remote-name> <remote-url>
 dvc push
 
