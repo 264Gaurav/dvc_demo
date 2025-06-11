@@ -27,6 +27,7 @@ This project showcases how DVC integrates with Git to manage datasets, machine l
 1. **Prepare Stage**: Prepares the raw data (data/data.xml) into a processed format (data/prepared).
 2. **Featurize Stage**: Extracts features from the prepared data (data/prepared) and outputs feature data (data/features).
 3. **Train Stage**: Trains a machine learning model using the features (data/features) and outputs the model file (model.pkl).
+4. **Evaluate Stage**: Evaluate a machine learning model on different parameters.
 
 The data pipeline is defined in the `dvc.yaml` file, which specifies the stages of the pipeline, their dependencies, outputs, and parameters.
 
