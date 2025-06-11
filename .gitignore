@@ -197,3 +197,4 @@ cython_debug/
 .cursorindexingignore
 
 /model.pkl
+/eval
