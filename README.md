@@ -10,7 +10,7 @@ DVC installed (pip install dvc)
 
 ## Overview
 
-This project showcases how DVC integrates with Git to manage datasets, machine learning models, and pipelines. It follows the principles of the ML lifecycle, including data preparation, model training, evaluation, and deployment.
+This project showcases how DVC integrates with Git to manage datasets, machine learning models, and pipelines. It follows the principles of the ML lifecycle, including data preparation, featurization, model training and evaluation.
 
 ## ML Lifecycle and Data Pipeline
 
