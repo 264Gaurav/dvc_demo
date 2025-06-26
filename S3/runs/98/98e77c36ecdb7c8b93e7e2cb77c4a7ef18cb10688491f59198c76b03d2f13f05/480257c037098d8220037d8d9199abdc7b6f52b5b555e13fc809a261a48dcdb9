@@ -1,0 +1,21 @@
+cmd: python src/evaluate.py model.pkl data/features
+deps:
+- path: data/features
+  hash: md5
+  md5: 760831c08a7871837ea602d7e15b1599.dir
+  size: 1490856
+  nfiles: 2
+- path: model.pkl
+  hash: md5
+  md5: d52933e41398550f13c528de96ee54f7
+  size: 3743800
+- path: src/evaluate.py
+  hash: md5
+  md5: 125a241720fa69befdb419a3b75e5bfb
+  size: 3300
+outs:
+- path: eval
+  hash: md5
+  md5: a9bcfb2c20bb2e8180e03a1eb3f8f3d4.dir
+  size: 1388553
+  nfiles: 8
