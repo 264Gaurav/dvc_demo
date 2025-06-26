@@ -1,4 +1,6 @@
 [core]
     remote = myremote
+[exp]
+    auto_push = true
 ['remote "myremote"']
     url = ../S3
